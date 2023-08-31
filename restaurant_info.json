@@ -1,100 +1,42 @@
 {
-  "restaurants": [
-    {
-      "name": "Tasty Bites",
-      "locations": [
-        "123 Main St, Cityville",
-        "456 Park Ave, Townburg"
-      ],
-      "schedules": [
-        {
-          "day": "Monday - Friday",
-          "hours": "11:00 AM - 9:00 PM"
-        },
-        {
-          "day": "Saturday - Sunday",
-          "hours": "12:00 PM - 10:00 PM"
-        }
-      ],
-      "menu": [
-        {
-          "dish": "Classic Burger",
-          "price": "$10.99"
-        },
-        {
-          "dish": "Margherita Pizza",
-          "price": "$12.49"
-        },
-        {
-          "dish": "Pasta Alfredo",
-          "price": "$14.99"
-        }
-      ],
-      "tags": ["burgers", "pizza", "pasta"],
-      "patterns": [
-        {
-          "pattern": "What are your hours of operation?",
-          "response": "We are open from {hours} every {day}."
-        },
-        {
-          "pattern": "Where are you located?",
-          "response": "We have two locations: {locations}."
-        },
-        {
-          "pattern": "What's on your menu?",
-          "response": "Our menu includes dishes like {menu_items}."
-        },
-        {
-          "pattern": "How much does the {dish} cost?",
-          "response": "The {dish} is priced at {price}."
-        }
-      ]
-    },
-    {
-      "name": "Spice Fusion",
-      "locations": [
-        "789 Oak Rd, Flavorville",
-        "101 Vine St, Seasonington"
-      ],
-      "schedules": [
-        {
-          "day": "Monday - Sunday",
-          "hours": "12:00 PM - 10:00 PM"
-        }
-      ],
-      "menu": [
-        {
-          "dish": "Chicken Tikka Masala",
-          "price": "$15.99"
-        },
-        {
-          "dish": "Vegetable Biryani",
-          "price": "$13.49"
-        },
-        {
-          "dish": "Naan Bread",
-          "price": "$2.99"
-        }
-      ],
-      "tags": ["indian", "spicy", "curry"],
-      "patterns": [
-        {
-          "pattern": "When are you open?",
-          "response": "We are open every day from {hours}."
-        },
-        {
-          "pattern": "Tell me about your menu.",
-          "response": "Our menu features a variety of {cuisine} dishes like {menu_items}."
-        },
-        {
-          "pattern": "Where can I find you?",
-          "response": "You can find us at {locations}."
-        },
-        {
-          "pattern": "What is your most popular dish?",
-          "response": "One of our most popular dishes is {popular_dish}."
-        }
-      ]
-    }
-  ]
+  "intents": {
+    "greeting": [
+      {"tag": "greeting", "patterns": ["Hello!", "Hi there!", "Hey!", "Greetings!"]}
+    ],
+    "location": [
+      {"tag": "location", "patterns": ["Where is the restaurant located?", "What's the address of the restaurant?", "Tell me about the restaurant's location."]}
+    ],
+    "schedule": [
+      {"tag": "schedule", "patterns": ["What are the opening hours?", "When is the restaurant open?", "Tell me about their schedule."]}
+    ],
+    "menu": [
+      {"tag": "menu", "patterns": ["Can you show me the menu?", "What dishes does the restaurant offer?", "Tell me about the menu."]}
+    ],
+    "prices": [
+      {"tag": "prices", "patterns": ["How much does the food cost?", "Tell me about the prices.", "What's the price range?"]}
+    ]
+  },
+  "responses": {
+    "greeting": [
+      "Hello! Welcome to the restaurant. How can we help you today?",
+      "Hi there! The restaurant is at your service.",
+      "Greetings! Ready to explore our offerings?"
+    ],
+    "location": [
+      "The restaurant is located at 123 Main Street, Cityville.",
+      "You can find us at 456 Park Avenue, Townsville."
+    ],
+    "schedule": [
+      "The restaurant is open from 11:00 AM to 10:00 PM every day except Mondays when we are closed.",
+      "Operating hours are from 12:00 PM to 9:00 PM on weekdays and from 1:00 PM to 10:00 PM on weekends."
+    ],
+    "menu": [
+      "Our menu offers a variety of delicious dishes, including appetizers, entrees, and desserts. Feel free to ask for specific recommendations!",
+      "The menu features an array of delectable cuisines, ranging from local specialties to international delights."
+    ],
+    "prices": [
+      "The prices vary depending on the dish, but we offer options to suit different budgets.",
+      "Prices at the restaurant vary based on your selection, and we ensure there's something for every budget."
+    ]
+  }
 }
