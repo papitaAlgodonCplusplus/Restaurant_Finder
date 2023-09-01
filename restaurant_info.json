@@ -17,26 +17,25 @@
     ]
   },
   "responses": {
-    "greeting": [
-      "Hello! Welcome to the restaurant. How can we help you today?",
-      "Hi there! The restaurant is at your service.",
-      "Greetings! Ready to explore our offerings?"
-    ],
-    "location": [
-      "The restaurant is located at 123 Main Street, Cityville.",
-      "You can find us at 456 Park Avenue, Townsville."
-    ],
-    "schedule": [
-      "The restaurant is open from 11:00 AM to 10:00 PM every day except Mondays when we are closed.",
-      "Operating hours are from 12:00 PM to 9:00 PM on weekdays and from 1:00 PM to 10:00 PM on weekends."
-    ],
-    "menu": [
-      "Our menu offers a variety of delicious dishes, including appetizers, entrees, and desserts. Feel free to ask for specific recommendations!",
-      "The menu features an array of delectable cuisines, ranging from local specialties to international delights."
-    ],
-    "prices": [
-      "The prices vary depending on the dish, but we offer options to suit different budgets.",
-      "Prices at the restaurant vary based on your selection, and we ensure there's something for every budget."
-    ]
+  "restaurant_tasty_bites": {
+    "tag": "restaurant_tasty_bites",
+    "responses": {
+      "greeting": ["Hello! Welcome to Tasty Bites. How can we help you today?", "Hi there! Tasty Bites is at your service.", "Greetings! Ready to explore Tasty Bites?"],
+      "location": ["Tasty Bites is located at 123 Main Street, Cityville."],
+      "schedule": ["Tasty Bites is open from 11:00 AM to 10:00 PM every day except Mondays when we are closed."],
+      "menu": ["Our menu offers a variety of delicious dishes, including appetizers, entrees, and desserts. Feel free to ask for specific recommendations!"],
+      "prices": ["The prices at Tasty Bites vary depending on the dish, but we offer options to suit different budgets."]
+    }
+  },
+  "restaurant_cuisine_delight": {
+    "tag": "restaurant_cuisine_delight",
+    "responses": {
+      "greeting": ["Hello! Welcome to Cuisine Delight. How can we assist you today?", "Hi there! Cuisine Delight is delighted to help.", "Greetings! Ready to experience Cuisine Delight's offerings?"],
+      "location": ["Cuisine Delight is situated at 456 Park Avenue, Townsville."],
+      "schedule": ["Cuisine Delight operates from 12:00 PM to 9:00 PM on weekdays, and from 1:00 PM to 10:00 PM on weekends."],
+      "menu": ["Our menu at Cuisine Delight features an array of delectable cuisines, ranging from local specialties to international delights."],
+      "prices": ["Prices at Cuisine Delight vary based on your selection, and we ensure there's something for every budget."]
+    }
   }
+}
 }
