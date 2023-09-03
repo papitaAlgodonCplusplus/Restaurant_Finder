@@ -1,41 +1,45 @@
 {
-  "intents": {
-    "greeting": [
-      {"tag": "greeting", "patterns": ["Hello!", "Hi there!", "Hey!", "Greetings!"]}
-    ],
-    "location": [
-      {"tag": "location", "patterns": ["Where is the restaurant located?", "What's the address of the restaurant?", "Tell me about the restaurant's location."]}
-    ],
-    "schedule": [
-      {"tag": "schedule", "patterns": ["What are the opening hours?", "When is the restaurant open?", "Tell me about their schedule."]}
-    ],
-    "menu": [
-      {"tag": "menu", "patterns": ["Can you show me the menu?", "What dishes does the restaurant offer?", "Tell me about the menu."]}
-    ],
-    "prices": [
-      {"tag": "prices", "patterns": ["How much does the food cost?", "Tell me about the prices.", "What's the price range?"]}
-    ]
-  },
-  "responses": {
-  "restaurant_tasty_bites": {
-    "tag": "restaurant_tasty_bites",
-    "responses": {
-      "greeting": ["Hello! Welcome to Tasty Bites. How can we help you today?", "Hi there! Tasty Bites is at your service.", "Greetings! Ready to explore Tasty Bites?"],
-      "location": ["Tasty Bites is located at 123 Main Street, Cityville."],
-      "schedule": ["Tasty Bites is open from 11:00 AM to 10:00 PM every day except Mondays when we are closed."],
-      "menu": ["Our menu offers a variety of delicious dishes, including appetizers, entrees, and desserts. Feel free to ask for specific recommendations!"],
-      "prices": ["The prices at Tasty Bites vary depending on the dish, but we offer options to suit different budgets."]
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hello!", "Hi there!", "Hey!", "Greetings!"],
+      "responses": [
+        "Hello, thanks for visiting",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": ["Where is the restaurant located?", "What's the address of the restaurant?", "Tell me about the restaurant's location."],
+      "responses": [
+        "Tasty Bites is located at 123 Main Street, Cityville.",
+        "Cuisine Delight is situated at 456 Park Avenue, Townsville."
+      ]
+    },
+    {
+      "tag": "schedule",
+      "patterns": ["What are the opening hours?", "When is the restaurant open?", "Tell me about their schedule."],
+      "responses": [
+        "Tasty Bites is open from 11:00 AM to 10:00 PM every day except Mondays when we are closed.",
+        "Cuisine Delight operates from 12:00 PM to 9:00 PM on weekdays, and from 1:00 PM to 10:00 PM on weekends."
+      ]
+    },
+    {
+      "tag": "menu",
+      "patterns": ["Can you show me the menu?", "What dishes does the restaurant offer?", "Tell me about the menu."],
+      "responses": [
+        "Our menu offers a variety of delicious dishes, including appetizers, entrees, and desserts. Feel free to ask for specific recommendations!",
+        "Our menu at Cuisine Delight features an array of delectable cuisines, ranging from local specialties to international delights."
+      ]
+    },
+    {
+      "tag": "prices",
+      "patterns": ["How much does the food cost?", "Tell me about the prices.", "What's the price range?"],
+      "responses": [
+        "The prices at Tasty Bites vary depending on the dish, but we offer options to suit different budgets.",
+        "Prices at Cuisine Delight vary based on your selection, and we ensure there's something for every budget."
+      ]
     }
-  },
-  "restaurant_cuisine_delight": {
-    "tag": "restaurant_cuisine_delight",
-    "responses": {
-      "greeting": ["Hello! Welcome to Cuisine Delight. How can we assist you today?", "Hi there! Cuisine Delight is delighted to help.", "Greetings! Ready to experience Cuisine Delight's offerings?"],
-      "location": ["Cuisine Delight is situated at 456 Park Avenue, Townsville."],
-      "schedule": ["Cuisine Delight operates from 12:00 PM to 9:00 PM on weekdays, and from 1:00 PM to 10:00 PM on weekends."],
-      "menu": ["Our menu at Cuisine Delight features an array of delectable cuisines, ranging from local specialties to international delights."],
-      "prices": ["Prices at Cuisine Delight vary based on your selection, and we ensure there's something for every budget."]
-    }
-  }
-}
+  ]
 }
